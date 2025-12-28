@@ -170,6 +170,14 @@
         </div>
     </footer>
 <script>
+    const isTouchDevice =
+    "ontouchstart" in window ||
+    navigator.maxTouchPoints > 0 ||
+    window.matchMedia("(pointer: coarse)").matches;
+    if (isTouchDevice) {
+        document.getElementById("cursor").style.display = "none";
+    }
+    else{
     const cursor = document.getElementById("cursor");
     const halo = cursor.querySelector(".halo");
     const trail = cursor.querySelector(".trail");
@@ -228,6 +236,7 @@
             });
         });
     });
+    }
 </script>
 
 

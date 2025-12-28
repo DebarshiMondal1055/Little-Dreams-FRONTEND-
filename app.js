@@ -5,8 +5,9 @@ const isTouchDevice =
     navigator.maxTouchPoints > 0 ||
     window.matchMedia("(pointer: coarse)").matches;
 
+
     if (!isTouchDevice) {   
-            const cursor = document.getElementById("cursor");
+    const cursor = document.getElementById("cursor");
     const halo = cursor.querySelector(".halo");
     const trail = cursor.querySelector(".trail");
 
@@ -42,6 +43,10 @@ const isTouchDevice =
             y: trailY
         });
     });
+    }
+    else {
+        // hide the cursor
+        document.getElementById("cursor").style.display = "none";
     }
 
     document.querySelectorAll(".features").forEach(card => {
