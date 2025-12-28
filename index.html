@@ -497,6 +497,37 @@ With patience and safety, we capture your baby’s earliest expressions — deli
             }
         }, {once: true}) // Remove the event listener after it's triggered once
     }
+
+let startX = 0;
+    let endX = 0;
+    const swipeThreshold = 50; // minimum px distance to trigger swipe
+
+    const sliderElement = document.querySelector(".slider");
+
+    if (sliderElement) {
+        sliderElement.addEventListener("touchstart", (e) => {
+            startX = e.touches[0].clientX;
+        }, { passive: true });
+
+        sliderElement.addEventListener("touchend", (e) => {
+            endX = e.changedTouches[0].clientX;
+            handleSwipe();
+        }, { passive: true });
+    }
+
+    function handleSwipe() {
+        const distance = endX - startX;
+
+        if (Math.abs(distance) < swipeThreshold) return;
+
+        if (distance < 0) {
+            // Swipe LEFT → next slide
+            moveSlider("next");
+        } else {
+            // Swipe RIGHT → previous slide
+            moveSlider("prev");
+        }
+    }
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="app.js"></script>
