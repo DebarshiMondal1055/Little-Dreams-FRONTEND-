@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Little Dream Films</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/ac38cb4d9c.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body class="">
+
+    <header class="bg-gray-800">
+        <section class="wrapper flex justify-between items-center p-4 h-[80px] ">
+            <div class="flex items-center gap-3 w-[160px] md:-[200px]">
+                <a href="/">
+                    <img src="images/logo-white.png" alt="Little Dream Logo" class="w-full">
+                </a>
+            </div>
+            <!-- Mobile Menu Button -->
+            <div class="block lg:hidden">
+                <button id="menu-toggle" class="text-white focus:outline-none">
+                    <!-- Icon (Hamburger) -->
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+            <!-- Desktop Menu -->
+            <nav class="hidden lg:flex space-x-6">
+                <a href="/" class="text-white text-[18px] font-semibold">Home</a>
+                <a href="#about" class="text-white text-[18px] font-semibold">About</a>
+                <a href="#service" class="text-white text-[18px] font-semibold">Services</a>
+                <a href="#contact" class="text-white text-[18px] font-semibold">Contact</a>
+            </nav>
+        </section>
+
+        <nav id="mobile-menu" class="hidden bg-gray-800 lg:hidden">
+            <a href="/" class="block text-white p-4">Home</a>
+            <a href="#about" class="block text-white p-4">About</a>
+            <a href="#service" class="block text-white p-4">Services</a>
+            <a href="#contact" class="block text-white p-4">Contact</a>
+        </nav>
+    </header>
+
+
+<section class="overflow-hidden">
+
+    
+
+<div class="slider">
+    <div class="list">
+        <div class="item">
+            <img src="./images/family_portraits.JPG" alt="" class="object-cover object-top">
+            <div class="content">
+                <div class="title">Family</div>
+                <div class="type">Photography</div>
+                <div class="description">
+                    Where love gathers, memories live forever. <br>
+We create warm, authentic, and timeless portraits that capture your family’s bond, togetherness, and real emotions.
+                </div>
+                <div class="button">
+                    <button class="text-black text-[15px]">
+                        <a href="family_portraits.html">Learn More</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="item">
+            <img src="./images/maternity.JPG" alt="" class="object-cover object-top">
+            <div class="content">
+                <div class="title">Maternity</div>
+                <div class="type">Photography</div>
+                <div class="description">
+                    A mother’s glow becomes the first chapter of your miracle. <br>
+We capture the elegance, emotion, and quiet strength of your journey into motherhood with soft, timeless frames that preserve this beautiful chapter forever. 
+                </div>
+                <div class="button">
+                    <button class="text-black text-[15px]">
+                        <a href="maternity.html">Learn More</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="item">
+            <img src="./images/baby_shower.JPG" alt="" class="object-cover object-top">
+            <div class="content">
+                <div class="title">Baby Shower</div>
+                <div class="type">Photography</div>
+                <div class="description">
+                    A celebration of blessings, love, and a new life on the way. <br>
+From rituals to décor and joyful moments, we document your celebration in a warm, storytelling style filled with emotion and tradition 
+                </div>
+                <div class="button">
+                    <button class="text-black text-[15px]">
+                        <a href="baby_shower.html">Learn More</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="item">
+            <img src="./images/newborn.JPG" alt="" class="object-cover object-top">
+            <div class="content">
+                <div class="title">Newborn</div>
+                <div class="type">Photography</div>
+                <div class="description">
+                    Tiny details filled with infinite love. <br>
+With patience and safety, we capture your baby’s earliest expressions — delicate, cozy, and full  <br> of innocence — turning fleeting moments into lifelong memories. 
+                </div>
+                <div class="button">
+                    <button class="text-black text-[15px]">
+                        <a href="new_born.html">Learn More</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="thumbnail">
+        <div class="item">
+            <img src="./images/family_portraits.JPG" alt="" >
+        </div>
+        <div class="item">
+            <img src="./images/maternity.JPG" alt="">
+        </div>
+        <div class="item">
+            <img src="./images/baby_shower.JPG" alt="Baby Shower">
+        </div>
+        <div class="item">
+            <img src="./images/newborn.JPG" alt="Newborn">
+        </div>
+        </div>
+        <div class="item">
+            <img src="./images/maternity.JPG" alt="">
+        </div>
+        <div class="item">
+            <img src="./images/baby_shower.JPG" alt="Baby Shower">
+        </div>
+        <div class="item">
+            <img src="./images/newborn.JPG" alt="Newborn">
+        </div>
+    </div>
+
+    <div class="nextPrevArrows">
+        <button class="prev shadow-md">
+            <i class="fa-solid fa-arrow-left text-[18px]"></i>
+        </button>
+        <button class="next shadow-md">
+            <i class="fa-solid fa-arrow-right text-[18px]"></i>
+        </button>
+    </div>
+
+</div>
+</section>
+
+<section id="about" class="py-16 bg-gradient-to-r from-yellow-50 to-orange-50">
+    <section class="wrapper">
+        <div class="container mx-auto px-6 md:px-12 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-700 mb-10 slide-in-down">About Us</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <div>
+                    <p class="text-[14px] text-left text-gray-800 mb-6 slide-in-down" style="animation-delay: 0.5s;">
+                        At Little Dream Films, we believe every family’s journey is filled with moments worth remembering. From the soft glow of maternity to the joyful excitement of birthdays, we are dedicated to capturing each chapter with authenticity, warmth, and artistic storytelling.
+                    </p>
+                    <p class="text-[14px] text-left text-gray-800 mb-6 slide-in-down" style="animation-delay: 0.7s;">
+                        We specialise in Maternity Photography, Baby Shower Photography, Newborn Photography, Naming Ceremony Photography, Birthday Photography, and Family Portrait Photography — offering a complete photography experience for growing families. Each session is designed to feel natural, comfortable, and personal, allowing you to relax while we preserve your most meaningful memories.
+                    </p>
+                    <p class="text-[14px] text-left text-gray-800 mb-6 slide-in-down" style="animation-delay: 0.9s;">
+                        Our work focuses on real emotions — the gentle smiles, the tiny details, the expressions that make your family unique. Whether you’re welcoming a new life, celebrating a milestone, or creating portraits together, we ensure every frame reflects love, connection, and timeless beauty
+                    </p>
+                    <p class="text-[14px] text-left text-gray-800 mb-6 slide-in-down" style="animation-delay: 1.1s;">
+                        With creative vision and thoughtful guidance, our team crafts images that feel genuine and elegant. We take the time to understand your story and style, bringing out the essence of your family in every photograph.
+                    </p>
+                    <p class="text-[14px] text-left text-gray-800 mb-6 slide-in-down" style="animation-delay: 1.1s;">
+                        Little Dream Films is built on trust, passion, and the belief that memories are the heart of every family.
+                    </p>
+                    <p class="text-[14px] text-left text-gray-800 mb-6 slide-in-down" style="animation-delay: 1.1s;">
+                        From bump to baby and beyond — we’re here to capture every beautiful moment along the way.
+                    </p>
+                </div>
+                <div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                        <!-- Feature 1 -->
+                        <div class="col-span-1 p-4 bg-white rounded-lg shadow-md slide-in-left" style="animation-delay: 1.3s;">
+                            <i class="fas fa-camera-retro fa-3x text-gray-800 mb-4"></i>
+                            <h3 class="text-[16px] font-semibold text-gray-800 mb-2">Professional Equipment</h3>
+                            <p class="text-gray-800 text-[12px]">We use state-of-the-art equipment to ensure the highest quality images.</p>
+                        </div>
+                        <!-- Feature 2 -->
+                        <div class="col-span-1 p-4 bg-white rounded-lg shadow-md slide-in-right" style="animation-delay: 1.5s;">
+                            <i class="fas fa-users fa-3x text-gray-800 mb-4"></i>
+                            <h3 class="text-[16px] font-semibold text-gray-800 mb-2">Experienced Team</h3>
+                            <p class="text-gray-800 text-[12px]">Our team consists of experienced photographers dedicated to your satisfaction.</p>
+                        </div>
+                        <!-- Feature 3 -->
+                        <div class="col-span-1 p-4 bg-white rounded-lg shadow-md slide-in-left" style="animation-delay: 1.7s;">
+                            <i class="fas fa-trophy fa-3x text-gray-800 mb-4"></i>
+                            <h3 class="text-[16px] font-semibold text-gray-800 mb-2">Award-Winning Service</h3>
+                            <p class="text-gray-800 text-[12px]">Recognized for our exceptional service in the photography industry.</p>
+                        </div>
+                        <!-- Feature 4 -->
+                        <div class="col-span-1 p-4 bg-white rounded-lg shadow-md slide-in-right" style="animation-delay: 1.9s;">
+                            <i class="fas fa-calendar-check fa-3x text-gray-800 mb-4"></i>
+                            <h3 class="text-[16px] font-semibold text-gray-800 mb-2">Flexible Scheduling</h3>
+                            <p class="text-gray-800 text-[12px]">We offer flexible scheduling options to fit your busy lifestyle.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>
+
+
+<style>
+    .smooth-scroll::-webkit-scrollbar {
+        display: none;
+    }
+    
+    .smooth-scroll::-webkit-scrollbar-thumb {
+        display: none;
+    }
+    
+    .smooth-scroll::-webkit-scrollbar-track {
+        display: none;
+    }
+    
+</style>
+  
+<main id="service" class=" wrapper px-4 py-12 bg-white">
+    <h2 class="text-3xl font-[500] text-center mb-12 text-gray-800">Our Services</h2>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-7">
+
+        <div class=" bg-white">
+            <img src="./images/family_portraits.JPG" alt="Family Portraits" class="object-top w-full h-56 object-cover rounded-lg">
+            <div class="mt-4">
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">Family Portrait  Photography</h3>
+                <p class="text-gray-600 min-h-20 max-h-30 overflow-hidden transition-all duration-300">
+                    Where love gathers, memories live forever. <br>
+We create warm, authentic, and timeless portraits that capture your family’s bond, togetherness, and real emotions.
+                </p>
+                <div class="py-5">
+                    <a href="family_portraits.html" class="text-black py-2 px-5 border-2 rounded-md">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class=" bg-white">
+            <img src="./images/baby_shower.JPG" alt="Baby Shower Photography" class="w-full h-56 object-top object-cover rounded-lg">
+            <div class="mt-4">
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">Baby Shower Photography</h3>
+                <p class="text-gray-600 min-h-20 max-h-30 overflow-hidden transition-all duration-300">
+                    A celebration of blessings, love, and a new life on the way. <br>
+From rituals to décor and joyful moments, we document your celebration in a warm, storytelling style filled with emotion and tradition.
+                </p>
+                <div class="py-5">
+                    <a href="baby_shower.html" class="text-black py-2 px-5 border-2 rounded-md">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class=" bg-white">
+            <img src="./images/naming_ceremony.JPG" alt="Naming Ceremony Photography" class="w-full h-56 object-cover rounded-lg">
+            <div class="mt-4">
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">Naming Ceremony Photography</h3>
+                <p class="text-gray-600 min-h-20 max-h-30 overflow-hidden transition-all duration-300">
+                    Celebrating the joy of your little one’s early milestones.<br>
+We capture the warmth, togetherness, and happy moments shared with your loved ones on this special day.
+                </p>
+                <div class="py-5">
+                    <a href="naming_ceremony.html" class="text-black py-2 px-5 border-2 rounded-md">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class=" bg-white">
+            <img src="./images/birthday.JPG" alt="Birthday Photography" class="w-full h-56 object-cover rounded-lg">
+            <div class="mt-4">
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">Birthday Photography</h3>
+                <p class="text-gray-600 min-h-20 max-h-30 overflow-hidden transition-all duration-300">
+                    A joyful story filled with colours, excitement, and happy memories.<br>
+We cover your child’s special day with vibrant, fun, and candid photographs that reflect the magic and energy of the celebration
+                </p>
+                <div class="py-5">
+                    <a href="birthday.html" class="text-black py-2 px-5 border-2 rounded-md">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+        </div>   
+
+        <div class=" bg-white">
+            <img src="./images/maternity.JPG" alt="Maternity Photography" class="rounded-lg w-full h-56 object-cover">
+            <div class="mt-4">
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">Maternity Photography</h3>
+                <p class="text-gray-600 min-h-20 max-h-30 overflow-hidden transition-all duration-300">
+                    A mother’s glow becomes the first chapter of your miracle.
+We capture the elegance, emotion, and quiet strength of your journey into motherhood with soft, timeless frames that preserve this beautiful chapter forever.
+                </p>
+                <div class="py-5">
+                    <a href="maternity.html" class="text-black py-2 px-5 border-2 rounded-md">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class=" bg-white">
+            <img src="./images/newborn.JPG" alt="Wedding Photography" class="w-full h-56 object-cover rounded-lg">
+            <div class="mt-4">
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">Newborn Photography</h3>
+                <p class="text-gray-600 min-h-20 max-h-30 overflow-hidden transition-all duration-300">
+                    Tiny details filled with infinite love.<br>
+With patience and safety, we capture your baby’s earliest expressions — delicate, cozy, and full of innocence — turning fleeting moments into lifelong memories.
+                </p>
+                <div class="py-5">
+                    <a href="new_born.html" class="text-black py-2 px-5 border-2 rounded-md">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</main>
+
+    <!-- Contact Section -->
+<section id="contact" class="py-16 bg-rose-50 contact-bg">
+    <div class="container mx-auto px-6 md:px-12 text-cente">
+        <h2 class="text-3xl md:text-4xl font-bold text-pink-700 mb-10 fade-in">Get in Touch</h2>
+        <p class="text-lg text-gray-700 mb-6 fade-in" style="animation-delay: 0.2s;">We would love to hear from you! Whether you have a question about our services or want to discuss your special day, feel free to reach out to us.</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 mt-10">
+            <!-- Contact Form -->
+            <div class="bg-white p-8 rounded-lg shadow-md fade-in" style="animation-delay: 0.4s;">
+                <h3 class="text-xl font-semibold text-pink-700 mb-4">Contact Form</h3>
+                <form id="contactForm">
+                    <div class="mb-4">
+                        <label for="name" class="block text-left text-pink-600">Name</label>
+                        <input type="text" id="name" name="name" class="w-full px-4 py-2 border border-pink-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-300" placeholder="Your Name">
+                    </div>
+                    <div class="mb-4">
+                        <label for="email" class="block text-left text-pink-600">Email</label>
+                        <input type="email" id="email" name="email" class="w-full px-4 py-2 border border-pink-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-300" placeholder="Your Email">
+                    </div>
+                    <div class="mb-4">
+                        <label for="message" class="block text-left text-pink-600">Message</label>
+                        <textarea id="message" name="message" class="w-full px-4 py-2 border border-pink-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-300" rows="4" placeholder="Your Message"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-pink-600 text-white px-4 py-2 rounded-lg hover:bg-pink-700 transition duration-300">Send Message</button>
+                </form>
+            </div>
+
+            <!-- Contact Information -->
+            <div class="bg-white p-8 rounded-lg shadow-md fade-in" style="animation-delay: 0.6s;">
+                <h3 class="text-xl font-semibold text-pink-700 mb-4">Contact Information</h3>
+                <p class="text-gray-700 mb-4">Feel free to reach us directly via phone or email, or visit us at our studio.</p>
+                <div class="flex items-center mb-4">
+                    <i class="fas fa-phone-alt text-pink-700 text-xl mr-3"></i>
+                    <p class="text-gray-700">+91 7511111234</p>
+                </div>
+                <div class="flex items-center mb-4">
+                    <i class="fas fa-map-marker-alt text-pink-700 text-xl mr-3"></i>
+                    <p class="text-gray-700">Indhiranagar, Bangalore</p>
+                </div>
+                <h3 class="text-lg font-semibold text-pink-700 mb-4 mt-8">Follow Us</h3>
+                <div class="flex space-x-4 justify-center">
+                    <a href="https://www.facebook.com/share/1FhRr8o4hS/?mibextid=wwXIfr" class="text-pink-700 hover:text-pink-800 text-2xl"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/littledreamfilms/" class="text-pink-700 hover:text-pink-800 text-2xl"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-pink-700 hover:text-pink-800 text-2xl"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-gray-900 text-white py-10">
+    <div class="wrapper mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- About Section -->
+        <div>
+            <h3 class="text-xl font-semibold mb-4 text-gray-400">About Studio</h3>
+            <p class="">
+                We are a creative studio dedicated to crafting unique and stunning digital experiences. Let’s create something amazing together.
+            </p>
+        </div>
+
+        <!-- Quick Links Section -->
+        <div>
+            <h3 class="text-xl font-semibold mb-4 text-gray-400">Quick Links</h3>
+            <ul class="space-y-2">
+                <li>
+                    <a href="#about" class="text-white">About Us</a>
+                </li>
+                <li>
+                    <a href="#services" class="text-white">Services</a>
+                </li>
+                <li>
+                    <a href="#portfolio" class="text-white">Portfolio</a>
+                </li>
+                <li>
+                    <a href="#contact" class="text-white">Contact</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Contact Section -->
+        <div>
+            <h3 class="text-xl font-semibold mb-4 text-gray-400">Contact Us</h3>
+            <ul class="space-y-2">
+                <li class="text-white">Phone: +91 7511111234</li>
+                <li class="text-white">Address: Indhiranagar, Bangalore</li>
+            </ul>
+            <!-- Social Media Icons -->
+            <div class="flex space-x-4 mt-4">
+                <a href="https://www.facebook.com/share/1FhRr8o4hS/?mibextid=wwXIfr" class="text-gray-400 hover:text-white">
+                    <!-- Example: Font Awesome icon usage, replace with appropriate icon library if necessary -->
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com/littledreamfilms?igsh=MXMwNWhndDExa2N4eQ==" class="text-gray-400 hover:text-white">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-white">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bottom Section -->
+    <div class="border-t border-gray-800 mt-8 pt-4 text-center">
+        <p class="text-gray-500">© 2025 little dream. All rights reserved.</p>
+    </div>
+</footer>
+
+
+<script>
+        let nextBtn = document.querySelector('.next')
+    let prevBtn = document.querySelector('.prev')
+    
+    let slider = document.querySelector('.slider')
+    let sliderList = slider.querySelector('.slider .list')
+    let thumbnail = document.querySelector('.slider .thumbnail')
+    let thumbnailItems = thumbnail.querySelectorAll('.item')
+    
+    thumbnail.appendChild(thumbnailItems[0])
+    
+    // Function for next button 
+    nextBtn.onclick = function() {
+        moveSlider('next')
+    }
+    
+    
+    // Function for prev button 
+    prevBtn.onclick = function() {
+        moveSlider('prev')
+    }
+    
+    
+    function moveSlider(direction) {
+        let sliderItems = sliderList.querySelectorAll('.item')
+        let thumbnailItems = document.querySelectorAll('.thumbnail .item')
+        
+        if(direction === 'next'){
+            sliderList.appendChild(sliderItems[0])
+            thumbnail.appendChild(thumbnailItems[0])
+            slider.classList.add('next')
+        } else {
+            sliderList.prepend(sliderItems[sliderItems.length - 1])
+            thumbnail.prepend(thumbnailItems[thumbnailItems.length - 1])
+            slider.classList.add('prev')
+        }
+    
+    
+        slider.addEventListener('animationend', function() {
+            if(direction === 'next'){
+                slider.classList.remove('next')
+            } else {
+                slider.classList.remove('prev')
+            }
+        }, {once: true}) // Remove the event listener after it's triggered once
+    }
+</script>
+<script src="app.js"></script>
+<script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuToggle.addEventListener('click', () => {
+        // Toggle visibility
+        mobileMenu.classList.toggle('hidden');
+        // Add sliding animation
+        mobileMenu.classList.toggle('translate-y-0');
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Little Dream Films</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/ac38cb4d9c.js" crossorigin="anonymous"></script>
+</head>
+<body class="">
+
+<main class=" wrapper px-4 py-12 bg-white">
+    <h2 class="text-3xl font-[500] text-center mb-12 text-gray-800">Our Services</h2>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-7">
+
+        <div class=" bg-white">
+            <img src="./images/1.webp" alt="Wedding Photography" class="w-full h-56">
+            <div class="mt-4">
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">Wedding Photography</h3>
+                <p class="text-gray-600 max-h-20 overflow-hidden transition-all duration-300">
+                    Capturing the magical moments of your big day, we specialize in timeless wedding photography.
+                </p>
+                <div class="py-5">
+                    <a href="wedding.html" class="text-black py-2 px-5 border-2 rounded-md">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class=" bg-white">
+            <img src="./images/2.webp" alt="Wedding Photography" class="w-full h-56">
+            <div class="mt-4">
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">Portrait Photography</h3>
+                <p class="text-gray-600 max-h-20 overflow-hidden transition-all duration-300">
+                    Our portrait sessions bring out the essence of your personality, offering creative and professional portraits for individuals, families, or special occasions. 
+                </p>
+                <div class="py-5">
+                    <a href="portrait.html" class="text-black py-2 px-5 border-2 rounded-md">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class=" bg-white">
+            <img src="./images/3.webp" alt="Wedding Photography" class="w-full h-56">
+            <div class="mt-4">
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">Commercial Photography</h3>
+                <p class="text-gray-600 max-h-20 overflow-hidden transition-all duration-300">
+                    Elevate your brand with professional commercial photography that highlights your products, services, and business identity. 
+                </p>
+                <div class="py-5">
+                    <a href="commercial.html" class="text-black py-2 px-5 border-2 rounded-md">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class=" bg-white">
+            <img src="./images/4.webp" alt="Wedding Photography" class="w-full h-56">
+            <div class="mt-4">
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">Product Shoot</h3>
+                <p class="text-gray-600 max-h-20 overflow-hidden transition-all duration-300">
+                    We specialize in detailed and high-quality product photography that showcases your items in their best light.
+                </p>
+                <div class="py-5">
+                    <a href="commercial.html" class="text-black py-2 px-5 border-2 rounded-md">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+        </div>   
+
+        <div class=" bg-white">
+            <img src="./images/5.webp" alt="Wedding Photography" class="w-full h-56">
+            <div class="mt-4">
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">Maternity Photography</h3>
+                <p class="text-gray-600 max-h-20 overflow-hidden transition-all duration-300">
+                    From capturing the beauty and anticipation of pregnancy to the tenderness of your newborn’s first days, we create timeless images that preserve these intimate, joyful experiences.
+                </p>
+                <div class="py-5">
+                    <a href="commercial.html" class="text-black py-2 px-5 border-2 rounded-md">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class=" bg-white">
+            <img src="./images/5.webp" alt="Wedding Photography" class="w-full h-56">
+            <div class="mt-4">
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">Baby Photography</h3>
+                <p class="text-gray-600 max-h-20 overflow-hidden transition-all duration-300">
+                    Celebrate the journey of motherhood and the precious moments of your baby’s early life with our combined maternity and baby photography services. 
+                </p>
+                <div class="py-5">
+                    <a href="baby.html" class="text-black py-2 px-5 border-2 rounded-md">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</main>
+
+
+<script>
+
+// JavaScript to handle "More" button clicks
+document.querySelectorAll('.more-btn').forEach(button => {
+    button.addEventListener('click', function (event) {
+        // Prevent the click event from bubbling up to other elements
+        event.stopPropagation();
+
+        // Toggle the paragraph associated with the clicked button
+        const paragraph = this.previousElementSibling; // Select the paragraph just before the button
+
+        if (paragraph.classList.contains('max-h-20')) {
+            paragraph.classList.remove('max-h-20', 'overflow-hidden');
+            paragraph.classList.add('max-h-40', 'overflow-visible');
+            this.textContent = 'Less'; // Change button text to "Less"
+        } else {
+            paragraph.classList.remove('max-h-40', 'overflow-visible');
+            paragraph.classList.add('max-h-20', 'overflow-hidden');
+            this.textContent = 'More'; // Change button text back to "More"
+        }
+    });
+});
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+</body>
+</html>
