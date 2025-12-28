@@ -1,5 +1,12 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const cursor = document.getElementById("cursor");
+
+const isTouchDevice =
+    "ontouchstart" in window ||
+    navigator.maxTouchPoints > 0 ||
+    window.matchMedia("(pointer: coarse)").matches;
+
+    if (!isTouchDevice) {   
+            const cursor = document.getElementById("cursor");
     const halo = cursor.querySelector(".halo");
     const trail = cursor.querySelector(".trail");
 
@@ -35,6 +42,7 @@ document.addEventListener('DOMContentLoaded', function() {
             y: trailY
         });
     });
+    }
 
     document.querySelectorAll(".features").forEach(card => {
         card.addEventListener("mouseenter", () => {
