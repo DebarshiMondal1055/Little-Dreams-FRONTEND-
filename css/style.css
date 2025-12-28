@@ -1,9 +1,81 @@
+#cursor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 10000;
+}
+
+/* MAIN HALO */
+#cursor .halo {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+
+    background: rgba(225, 169, 97, 0.25);
+    border: 1.5px solid rgba(225, 169, 97, 0.9);
+
+    box-shadow:
+        0 0 15px rgba(225, 169, 97, 0.6),
+        0 0 40px rgba(225, 169, 97, 0.35),
+        0 0 80px rgba(225, 169, 97, 0.15);
+
+    backdrop-filter: blur(4px);
+}
+
+/* NEON TRAIL */
+#cursor .trail {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+
+    background: radial-gradient(
+        circle,
+        rgba(225,169,97,1) 0%,
+        rgba(225,169,97,0.4) 40%,
+        transparent 70%
+    );
+
+    filter: blur(2px);
+}
+
 
 body{
     margin: 0;
     color: #eee;
     font-family: "Poppins", sans-serif;
     font-size: 12px;
+}
+
+.service-card {
+    position: relative;
+    border-radius: 14px;
+    overflow: hidden;
+    transform-style: preserve-3d;
+    will-change: transform;
+    background: #fff;
+}
+
+/* soft glow border */
+.service-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    pointer-events: none;
+    opacity: 0;
+    box-shadow:
+        0 0 0 1px rgba(225,169,97,0.4),
+        0 20px 60px rgba(225,169,97,0.25);
+    transition: opacity 0.3s ease;
+}
+
+.service-card:hover::after {
+    opacity: 1;
 }
 
 a{

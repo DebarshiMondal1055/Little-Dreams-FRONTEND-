@@ -6,13 +6,18 @@
     <title>Little Dream Films</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+
     <script src="https://kit.fontawesome.com/ac38cb4d9c.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-
+<div id="cursor">
+  <span class="halo"></span>
+  <span class="trail"></span>
+</div>
     <!-- Title Section -->
     <header class="bg-[#E1A961] text-white py-6">
         <div class="container mx-auto px-4">
@@ -69,15 +74,15 @@
                     <form>
                         <div class="mb-4">
                             <label for="name" class="block text-left text-pink-600">Name</label>
-                            <input type="text" id="name" name="name" class="w-full px-4 py-2 border border-pink-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-300" placeholder="Your Name">
+                            <input type="text" id="name" name="name" class="text-gray-600 w-full px-4 py-2 border border-pink-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-300" placeholder="Your Name">
                         </div>
                         <div class="mb-4">
                             <label for="email" class="block text-left text-pink-600">Email</label>
-                            <input type="email" id="email" name="email" class="w-full px-4 py-2 border border-pink-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-300" placeholder="Your Email">
+                            <input type="email" id="email" name="email" class="text-gray-600 w-full px-4 py-2 border border-pink-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-300" placeholder="Your Email">
                         </div>
                         <div class="mb-4">
                             <label for="message" class="block text-left text-pink-600">Message</label>
-                            <textarea id="message" name="message" class="w-full px-4 py-2 border border-pink-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-300" rows="4" placeholder="Your Message"></textarea>
+                            <textarea id="message" name="message" class="text-gray-600 w-full px-4 py-2 border border-pink-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-300" rows="4" placeholder="Your Message"></textarea>
                         </div>
                         <button type="submit" class="w-full bg-pink-600 text-white px-4 py-2 rounded-lg hover:bg-pink-700 transition duration-300">Send Message</button>
                     </form>
@@ -164,6 +169,66 @@
             <p class="text-gray-500">© 2025 little dream. All rights reserved.</p>
         </div>
     </footer>
+<script>
+    const cursor = document.getElementById("cursor");
+    const halo = cursor.querySelector(".halo");
+    const trail = cursor.querySelector(".trail");
+
+    gsap.set([halo, trail], {
+        xPercent: -50,
+        yPercent: -50
+    });
+
+    let mouseX = 0, mouseY = 0;
+    let trailX = 0, trailY = 0;
+
+    document.addEventListener("mousemove", e => {
+        mouseX = e.clientX;
+        mouseY = e.clientY;
+    });
+
+    gsap.ticker.add(() => {
+        // Main halo follows smoothly
+        gsap.to(halo, {
+            x: mouseX,
+            y: mouseY,
+            duration: 0.25,
+            ease: "power3.out",
+            overwrite: true
+        });
+
+        // Trail lags behind (liquid neon feel)
+        trailX += (mouseX - trailX) * 0.12;
+        trailY += (mouseY - trailY) * 0.12;
+
+        gsap.set(trail, {
+            x: trailX,
+            y: trailY
+        });
+    });
+
+    document.querySelectorAll(".features").forEach(card => {
+        card.addEventListener("mouseenter", () => {
+            gsap.to(card, {
+                scale: 1.05,
+                y: -10,
+                boxShadow: "0 25px 50px rgba(0,0,0,0.15)",
+                duration: 0.35,
+                ease: "power3.out"
+            });
+        });
+
+        card.addEventListener("mouseleave", () => {
+            gsap.to(card, {
+                scale: 1,
+                y: 0,
+                boxShadow: "0 10px 20px rgba(0,0,0,0.1)",
+                duration: 0.35,
+                ease: "power3.out"
+            });
+        });
+    });
+</script>
 
 
 </body>

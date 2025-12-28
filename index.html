@@ -12,6 +12,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body class="">
+<div id="cursor">
+  <span class="halo"></span>
+  <span class="trail"></span>
+</div>
 
     <header class="bg-gray-800">
         <section class="wrapper flex justify-between items-center p-4 h-[80px] ">
@@ -31,10 +35,10 @@
             </div>
             <!-- Desktop Menu -->
             <nav class="hidden lg:flex space-x-6">
-                <a href="/" class="text-white text-[18px] font-semibold">Home</a>
-                <a href="#about" class="text-white text-[18px] font-semibold">About</a>
-                <a href="#service" class="text-white text-[18px] font-semibold">Services</a>
-                <a href="#contact" class="text-white text-[18px] font-semibold">Contact</a>
+                <a href="/" class="text-white text-[18px] font-semibold hover:text-[#E1A961]">Home</a>
+                <a href="#about" class="text-white text-[18px] font-semibold hover:text-[#E1A961]">About</a>
+                <a href="#service" class="text-white text-[18px] font-semibold hover:text-[#E1A961]">Services</a>
+                <a href="#contact" class="text-white text-[18px] font-semibold hover:text-[#E1A961]">Contact</a>
             </nav>
         </section>
 
@@ -185,27 +189,27 @@ With patience and safety, we capture your baby’s earliest expressions — deli
                     </p>
                 </div>
                 <div>
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                    <div  class="grid grid-cols-1 sm:grid-cols-2 gap-5">
                         <!-- Feature 1 -->
-                        <div class="col-span-1 p-4 bg-white rounded-lg shadow-md slide-in-left" style="animation-delay: 1.3s;">
+                        <div  class="features col-span-1 p-4 bg-white rounded-lg shadow-md slide-in-left" style="animation-delay: 1.3s;">
                             <i class="fas fa-camera-retro fa-3x text-gray-800 mb-4"></i>
                             <h3 class="text-[16px] font-semibold text-gray-800 mb-2">Professional Equipment</h3>
                             <p class="text-gray-800 text-[12px]">We use state-of-the-art equipment to ensure the highest quality images.</p>
                         </div>
                         <!-- Feature 2 -->
-                        <div class="col-span-1 p-4 bg-white rounded-lg shadow-md slide-in-right" style="animation-delay: 1.5s;">
+                        <div  class=" features col-span-1 p-4 bg-white rounded-lg shadow-md slide-in-right" style="animation-delay: 1.5s;">
                             <i class="fas fa-users fa-3x text-gray-800 mb-4"></i>
                             <h3 class="text-[16px] font-semibold text-gray-800 mb-2">Experienced Team</h3>
                             <p class="text-gray-800 text-[12px]">Our team consists of experienced photographers dedicated to your satisfaction.</p>
                         </div>
                         <!-- Feature 3 -->
-                        <div class="col-span-1 p-4 bg-white rounded-lg shadow-md slide-in-left" style="animation-delay: 1.7s;">
+                        <div  class=" features col-span-1 p-4 bg-white rounded-lg shadow-md slide-in-left" style="animation-delay: 1.7s;">
                             <i class="fas fa-trophy fa-3x text-gray-800 mb-4"></i>
                             <h3 class="text-[16px] font-semibold text-gray-800 mb-2">Award-Winning Service</h3>
                             <p class="text-gray-800 text-[12px]">Recognized for our exceptional service in the photography industry.</p>
                         </div>
                         <!-- Feature 4 -->
-                        <div class="col-span-1 p-4 bg-white rounded-lg shadow-md slide-in-right" style="animation-delay: 1.9s;">
+                        <div  class=" features col-span-1 p-4 bg-white rounded-lg shadow-md slide-in-right" style="animation-delay: 1.9s;">
                             <i class="fas fa-calendar-check fa-3x text-gray-800 mb-4"></i>
                             <h3 class="text-[16px] font-semibold text-gray-800 mb-2">Flexible Scheduling</h3>
                             <p class="text-gray-800 text-[12px]">We offer flexible scheduling options to fit your busy lifestyle.</p>
@@ -238,7 +242,7 @@ With patience and safety, we capture your baby’s earliest expressions — deli
 
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-7">
 
-        <div class=" bg-white">
+        <div  class="service-card bg-white">
             <img src="./images/family_portraits.JPG" alt="Family Portraits" class="object-top w-full h-56 object-cover rounded-lg">
             <div class="mt-4">
                 <h3 class="text-xl font-semibold text-gray-800 mb-2">Family Portrait  Photography</h3>
@@ -254,7 +258,7 @@ We create warm, authentic, and timeless portraits that capture your family’s b
             </div>
         </div>
 
-        <div class=" bg-white">
+        <div class="service-card bg-white">
             <img src="./images/baby_shower.JPG" alt="Baby Shower Photography" class="w-full h-56 object-top object-cover rounded-lg">
             <div class="mt-4">
                 <h3 class="text-xl font-semibold text-gray-800 mb-2">Baby Shower Photography</h3>
@@ -270,9 +274,9 @@ From rituals to décor and joyful moments, we document your celebration in a war
             </div>
         </div>
 
-        <div class=" bg-white">
+        <div class="service-card bg-white">
             <img src="./images/naming_ceremony.JPG" alt="Naming Ceremony Photography" class="w-full h-56 object-cover rounded-lg">
-            <div class="mt-4">
+            <div class="px-4  mt-4">
                 <h3 class="text-xl font-semibold text-gray-800 mb-2">Naming Ceremony Photography</h3>
                 <p class="text-gray-600 min-h-20 max-h-30 overflow-hidden transition-all duration-300">
                     Celebrating the joy of your little one’s early milestones.<br>
@@ -286,7 +290,7 @@ We capture the warmth, togetherness, and happy moments shared with your loved on
             </div>
         </div>
 
-        <div class=" bg-white">
+        <div class="service-card bg-white">
             <img src="./images/birthday.JPG" alt="Birthday Photography" class="w-full h-56 object-cover rounded-lg">
             <div class="mt-4">
                 <h3 class="text-xl font-semibold text-gray-800 mb-2">Birthday Photography</h3>
@@ -302,7 +306,7 @@ We cover your child’s special day with vibrant, fun, and candid photographs th
             </div>
         </div>   
 
-        <div class=" bg-white">
+        <div class="service-card bg-white">
             <img src="./images/maternity.JPG" alt="Maternity Photography" class="rounded-lg w-full h-56 object-cover">
             <div class="mt-4">
                 <h3 class="text-xl font-semibold text-gray-800 mb-2">Maternity Photography</h3>
@@ -318,7 +322,7 @@ We capture the elegance, emotion, and quiet strength of your journey into mother
             </div>
         </div>
         
-        <div class=" bg-white">
+        <div class="service-card bg-white">
             <img src="./images/newborn.JPG" alt="Wedding Photography" class="w-full h-56 object-cover rounded-lg">
             <div class="mt-4">
                 <h3 class="text-xl font-semibold text-gray-800 mb-2">Newborn Photography</h3>
@@ -349,15 +353,15 @@ With patience and safety, we capture your baby’s earliest expressions — deli
                 <form id="contactForm">
                     <div class="mb-4">
                         <label for="name" class="block text-left text-pink-600">Name</label>
-                        <input type="text" id="name" name="name" class="w-full px-4 py-2 border border-pink-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-300" placeholder="Your Name">
+                        <input type="text" id="name" name="name" class="text-gray-600 w-full px-4 py-2 border border-pink-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-300" placeholder="Your Name">
                     </div>
                     <div class="mb-4">
                         <label for="email" class="block text-left text-pink-600">Email</label>
-                        <input type="email" id="email" name="email" class="w-full px-4 py-2 border border-pink-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-300" placeholder="Your Email">
+                        <input type="email" id="email" name="email" class="text-gray-600 w-full px-4 py-2 border border-pink-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-300" placeholder="Your Email">
                     </div>
                     <div class="mb-4">
                         <label for="message" class="block text-left text-pink-600">Message</label>
-                        <textarea id="message" name="message" class="w-full px-4 py-2 border border-pink-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-300" rows="4" placeholder="Your Message"></textarea>
+                        <textarea id="message" name="message" class="text-gray-600 w-full px-4 py-2 border border-pink-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-300" rows="4" placeholder="Your Message"></textarea>
                     </div>
                     <button type="submit" class="w-full bg-pink-600 text-white px-4 py-2 rounded-lg hover:bg-pink-700 transition duration-300">Send Message</button>
                 </form>
@@ -446,8 +450,9 @@ With patience and safety, we capture your baby’s earliest expressions — deli
 </footer>
 
 
+
 <script>
-        let nextBtn = document.querySelector('.next')
+    let nextBtn = document.querySelector('.next')
     let prevBtn = document.querySelector('.prev')
     
     let slider = document.querySelector('.slider')
@@ -482,8 +487,8 @@ With patience and safety, we capture your baby’s earliest expressions — deli
             thumbnail.prepend(thumbnailItems[thumbnailItems.length - 1])
             slider.classList.add('prev')
         }
-    
-    
+        
+        
         slider.addEventListener('animationend', function() {
             if(direction === 'next'){
                 slider.classList.remove('next')
@@ -493,11 +498,12 @@ With patience and safety, we capture your baby’s earliest expressions — deli
         }, {once: true}) // Remove the event listener after it's triggered once
     }
 </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="app.js"></script>
 <script>
     const menuToggle = document.getElementById('menu-toggle');
     const mobileMenu = document.getElementById('mobile-menu');
-
+    
     menuToggle.addEventListener('click', () => {
         // Toggle visibility
         mobileMenu.classList.toggle('hidden');
